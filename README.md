@@ -12,7 +12,7 @@ This AI chatbot is named Joshua and it is a virtual career counselor for student
 ## Usage example
 
 1. Through a browser, log into pandorabots.com.
-2. Go to Pandorabot - Bot Directory
+2. [Go to Pandorabot - Bot Directory](https://home.pandorabots.com/dash/bot-directory)
 3. In the search bar, type: “Joshua c951 career advice bot”
 4. Double click the bot in search results
 5. Click yellow bot icon in bottom right corner
