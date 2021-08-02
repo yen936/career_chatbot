@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  
+  //Greeting
+  <category>
+      <pattern>hi</pattern>
+      <template>Hi! I am Joshua your virual CS career assistant. What would you like to do?
+      <reply>
+          <text>Start your Career Search</text>
+            <postback>start</postback>
+        </reply>
+        <reply>
+            <text>Learn about Joshua</text>
+            <postback>about</postback>
+        </reply>
+    </template>
+      
+  </category>
+  
+  <category>
+    <pattern>Hello</pattern>
+    <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+    <pattern>hey</pattern>
+    <template><srai>HI</srai></template>
+    </category>
+    
+   <category>
+    <pattern>Sup</pattern>
+    <template><srai>HI</srai></template>
+   </category>
+  
+   // Opener
+  <category>
+      <pattern>* career *</pattern>
+      <template>I hear you Can we talk careers paths?</template>
+  </category>
+  <category>
+        <pattern>* career</pattern>
+        <template><srai>* career * </srai></template>
+   </category>
+   <category>
+        <pattern>career *</pattern>
+        <template><srai>* career * </srai></template>
+   </category>
+   <category>
+        <pattern>career</pattern>
+        <template><srai>* career * </srai></template>
+   </category>
+  
+  
+   // Thank you
+  <category>
+      <pattern>Thank you</pattern>
+      <template>
+          <random>
+            <li>You are most welcome</li>
+            <li>Oh of course, anytime</li>
+            <li>Not a problem, happy to help</li>
+           </random>
+      </template>
+  </category>
+  <category>
+        <pattern>thanks</pattern>
+        <template><srai>thank you</srai></template>
+   </category>
+  
+  // Stop
+  <category>
+      <pattern>stop</pattern>
+      <template>Ok, what else can I help you with?</template>
+  </category>
+  
+  
+  // Help
+  <category>
+      <pattern>help</pattern>
+      <template>What can I help you with?
+      </template>
+  </category>
+  
+  // Help Reponses
+  
+  <category>
+      <pattern>IDK</pattern>
+      <template>Well idk either, lets just wait</template>
+  </category>
+  
+  <category>
+        <pattern>I do not know</pattern>
+        <template><srai>IDK</srai></template>
+  </category>
+
+    <category>
+        <pattern>No idea</pattern>
+        <template><srai>IDK</srai></template>
+  </category>  
+  
+  
+  <category>
+      <pattern>About</pattern>
+      <template>My name is Joshua and I am a career advisor
+      for students in the Computer Science department, but 
+      enough about me what do you want to talk about?
+        <reply>
+          <text>Start your Career Search</text>
+            <postback>start</postback>
+        </reply>
+        <reply>
+            <text>Tell me a joke</text>
+            <postback>Joke</postback>
+        </reply>
+    </template>
+  </category>
+  
+  // Save Name
+  <category>
+      <pattern>my name is *</pattern>
+      <template>Nice to meet you <set name = "name" > <star/></set>! 
+        <reply>
+          <text>Learn about Joshua</text>
+            <postback>about</postback>
+        </reply>
+        <reply>
+          <text>Begin Career Search</text>
+            <postback>start</postback>
+        </reply>
+      </template>
+  </category>
+  
+  
+  
+  //Question 1
+  <category>
+      <pattern>yes</pattern>
+      <that>I HEAR YOU CAN WE TALK CAREERS PATHS</that>
+      <template>Do you have a passion for designing software with beautiful UIs?</template>
+  </category>
+  <category>
+      <pattern>ok</pattern>
+      <that>I HEAR YOU CAN WE TALK CAREERS PATHS</that>
+      <template><srai>yes</srai></template>
+  </category>
+  
+  <category>
+      <pattern>yes</pattern>
+      <that>HMMM YEAH DO YOU WANT SOME CAREER ADVICE</that>
+      <template>Do you have a passion for designing software with beautiful UIs?</template>
+  </category>
+  
+  
+  
+  <category>
+      <pattern>ok</pattern>
+      <that>HMMM YEAH DO YOU WANT SOME CAREER ADVICE</that>
+      <template><srai>yes</srai></template>
+  </category>
+  
+  <category>
+      <pattern>start</pattern>
+      <template>Do you have a passion for designing software with beautiful UIs?</template>
+  </category>
+  
+  
+  // Response 1 
+  <category>
+      <pattern>Yes</pattern>
+      <that>DO YOU HAVE A PASSION FOR DESIGNING SOFTWARE WITH BEAUTIFUL UIS</that>
+      <template>You would be an awesome Mobile Engineer Would you like to learn more about Mobile Engineering?</template>
+  </category>
+  
+  <category>
+      <pattern>yeah</pattern>
+      <that>DO YOU HAVE A PASSION FOR DESIGNING SOFTWARE WITH BEAUTIFUL UIS</that>
+      <template><srai>yes</srai></template>
+  </category>
+  
+  
+  //Learn more - Mobile Engineer
+  
+  <category>
+      <pattern>Yes</pattern>
+      <that>YOU WOULD BE AN AWESOME MOBILE ENGINEER
+      WOULD YOU LIKE TO LEARN MORE ABOUT MOBILE ENGINEERING</that>
+      <template>
+        <link>
+        <text>Mobile Engineer : Apps so intutive they do not have a tutorial</text>
+        <url>https://www.payscale.com/research/US/Job=Mobile_Engineer/Salary</url>
+        </link>
+    </template>
+  </category>
+  <category>
+      <pattern>yeah</pattern>
+      <that>YOU WOULD BE AN AWESOME MOBILE ENGINEER
+      WOULD YOU LIKE TO LEARN MORE ABOUT MOBILE ENGINEERING</that>
+      <template><srai>yes</srai></template>
+  </category>
+  <category>
+      <pattern>ok </pattern>
+      <that>YOU WOULD BE AN AWESOME MOBILE ENGINEER
+      WOULD YOU LIKE TO LEARN MORE ABOUT MOBILE ENGINEERING</that>
+      <template><srai>yes</srai></template>
+  </category>
+  
+  <category>
+      <pattern>No</pattern>
+      <that>YOU WOULD BE AN AWESOME MOBILE ENGINEER
+      WOULD YOU LIKE TO LEARN MORE ABOUT MOBILE ENGINEERING</that>
+      <template>L8r dood</template>
+  </category>
+  
+  
+  // Question 2 
+  <category>
+      <pattern>No</pattern>
+      <that>DO YOU HAVE A PASSION FOR DESIGNING SOFTWARE WITH BEAUTIFUL UIS</that>
+      <template>Ok Do you prefer CONCEPTUAL or PRAGMATIC programming</template>
+  </category>
+  
+  // Response 2
+  <category>
+      <pattern>CONCEPTUAL</pattern>
+      <that>OK DO YOU PREFER CONCEPTUAL OR PRAGMATIC PROGRAMMING</that>
+      <template>You will excel as a Machine Learning Engineer 
+      Learn more about this new engineering role?</template>
+  </category>
+  <category>
+        <pattern>concept</pattern>
+        <that>OK DO YOU PREFER CONCEPTUAL OR PRAGMATIC PROGRAMMING</that>
+        <template><srai>CONCEPTUAL</srai></template>
+  </category>
+  <category>
+        <pattern>1</pattern>
+        <that>OK DO YOU PREFER CONCEPTUAL OR PRAGMATIC PROGRAMMING</that>
+        <template><srai>CONCEPTUAL</srai></template>
+  </category>
+  
+  
+  //Learn more - Machine Learning Engineer
+  <category>
+      <pattern>Yes</pattern>
+      <that>YOU WILL EXCEL AS A MACHINE LEARNING ENGINEER 
+      LEARN MORE ABOUT THIS NEW ENGINEERING ROLE</that>
+      <template> 
+        <link>
+        <text>Machine Learning Engineeer : Remember think C3P0 not Skynet</text>
+        <url>https://www.payscale.com/research/US/Job=Machine_Learning_Engineer/Salary</url>
+        </link>
+    </template>
+  </category>
+  <category>
+      <pattern>yeah</pattern>
+      <that>YOU WILL EXCEL AS A MACHINE LEARNING ENGINEER 
+      LEARN MORE ABOUT THIS NEW ENGINEERING ROLE</that>
+      <template><srai>yes</srai></template>
+  </category>
+  <category>
+      <pattern>ok</pattern>
+      <that>YOU WILL EXCEL AS A MACHINE LEARNING ENGINEER 
+      LEARN MORE ABOUT THIS NEW ENGINEERING ROLE</that>
+      <template><srai>yes</srai></template>
+  </category>
+  
+  
+  <category>
+      <pattern>No</pattern>
+      <that>YOU WILL EXCEL AS A MACHINE LEARNING ENGINEER 
+      LEARN MORE ABOUT THIS NEW ENGINEERING ROLE</that>
+      <template>Cool see you later</template>
+  </category>
+  
+  
+  
+  // Question 3
+  <category>
+      <pattern>PRAGMATIC</pattern>
+      <that>OK DO YOU PREFER CONCEPTUAL OR PRAGMATIC PROGRAMMING</that>
+      <template>Do you see yourself as a specialist or a generalist?</template>
+  </category>
+  <category>
+        <pattern>2</pattern>
+        <that>OK DO YOU PREFER CONCEPTUAL OR PRAGMATIC PROGRAMMING</that>
+        <template><srai>PRAGMATIC</srai></template>
+  </category>
+  
+  // Response 3
+  <category>
+      <pattern>specialist</pattern>
+      <that>DO YOU SEE YOURSELF AS A SPECIALIST OR A GENERALIST</that>
+      <template>You have what it takes to be a DataBase Administrator 
+      Learn more about this stable role?</template>
+  </category>
+  <category>
+        <pattern>special</pattern>
+        <that>DO YOU SEE YOURSELF AS A SPECIALIST OR A GENERALIST</that>
+        <template><srai>specialist</srai></template>
+  </category>  
+   <category>
+        <pattern>1</pattern>
+        <that>DO YOU SEE YOURSELF AS A SPECIALIST OR A GENERALIST</that>
+        <template><srai>specialist</srai></template>
+  </category>  
+  
+  
+  //Learn more - DBA
+  <category>
+      <pattern>Yes</pattern>
+      <that>YOU HAVE WHAT IT TAKES TO BE A DATABASE ADMINISTRATOR 
+      LEARN MORE ABOUT THIS STABLE ROLE</that>
+      <template> 
+        <link>
+        <text>Data Base Administor : May your SQL queries never forget the ';'</text>
+        <url>https://www.payscale.com/research/US/Job=Database_Administrator_(DBA)/Salary</url>
+        </link>
+    </template>
+  </category>
+  <category>
+      <pattern>yeah</pattern>
+      <that>YOU HAVE WHAT IT TAKES TO BE A DATABASE ADMINISTRATOR 
+      LEARN MORE ABOUT THIS STABLE ROLE</that>
+      <template><srai>yes</srai></template>
+  </category>
+  <category>
+      <pattern>ok</pattern>
+      <that>YOU HAVE WHAT IT TAKES TO BE A DATABASE ADMINISTRATOR 
+      LEARN MORE ABOUT THIS STABLE ROLE</that>
+      <template><srai>yes</srai></template>
+  </category>
+  
+  <category>
+      <pattern>No</pattern>
+      <that>YOU HAVE WHAT IT TAKES TO BE A DATABASE ADMINISTRATOR 
+      LEARN MORE ABOUT THIS STABLE ROLE</that>
+      <template>Cheers mate</template>
+  </category>
+  
+  
+  // Question 4
+  <category>
+      <pattern>generalist</pattern>
+      <that>DO YOU SEE YOURSELF AS A SPECIALIST OR A GENERALIST</that>
+      <template>Would you prefer to work with standard opensource or cutting edge closedsource tools?</template>
+  </category>
+   <category>
+        <pattern>general</pattern>
+        <that>DO YOU SEE YOURSELF AS A SPECIALIST OR A GENERALIST</that>
+        <template><srai>generalist</srai></template>
+  </category>  
+   <category>
+        <pattern>2</pattern>
+        <that>DO YOU SEE YOURSELF AS A SPECIALIST OR A GENERALIST</that>
+        <template><srai>generalist</srai></template>
+  </category> 
+  
+   // Response 4 
+  <category>
+      <pattern>opensource</pattern>
+      <that>WOULD YOU PREFER TO WORK WITH STANDARD OPENSOURCE OR CUTTING EDGE CLOSEDSOURCE TOOLS</that>
+      <template>Your thrill for dynamic tech will make you the perfect Backend Developer 
+      Learn more?</template>
+  </category>
+  <category>
+        <pattern>open</pattern>
+       <that>WOULD YOU PREFER TO WORK WITH STANDARD OPENSOURCE OR CUTTING EDGE CLOSEDSOURCE TOOLS</that>
+        <template><srai>opensource</srai></template>
+  </category>
+  
+  
+  //Learn more - Backend DEV
+  <category>
+      <pattern>Yes</pattern>
+      <that>YOUR THRILL FOR DYNAMIC TECH WILL MAKE YOU THE PERFECT BACKEND DEVELOPER 
+      LEARN MORE</that>
+      <template> 
+        <link>
+        <text>Backend Developer : Django + Django Rest + Postgres = best stack</text>
+        <url>https://www.payscale.com/research/US/Job=Back_End_Developer%2F_Engineer/Salary</url>
+        </link>
+    </template>
+  </category>
+  <category>
+      <pattern>yeah</pattern>
+      <that>YOUR THRILL FOR DYNAMIC TECH WILL MAKE YOU THE PERFECT BACKEND DEVELOPER 
+      LEARN MORE</that>
+      <template><srai>yes</srai></template>
+  </category>
+  <category>
+      <pattern>ok</pattern>
+      <that>YOUR THRILL FOR DYNAMIC TECH WILL MAKE YOU THE PERFECT BACKEND DEVELOPER 
+      LEARN MORE</that>
+      <template><srai>yes</srai></template>
+  </category>
+
+  
+  
+  
+  <category>
+      <pattern>No</pattern>
+      <that>YOUR THRILL FOR NEW WILL MAKE YOU THE PERFECT BACKEND DEVELOPER 
+      LEARN MORE</that>
+      <template>Until next time my friend</template>
+  </category>
+  
+  // Response 4.1
+  <category>
+      <pattern>closedsource</pattern>
+      <that>WOULD YOU PREFER TO WORK WITH STANDARD OPENSOURCE OR CUTTING EDGE CLOSEDSOURCE TOOLS</that>
+      <template>Your determination for the best will serve you well as a Cyber Security Analyst:
+      Learn more?</template>
+  </category>
+  <category>
+        <pattern>closed</pattern>
+       <that>WOULD YOU PREFER TO WORK WITH STANDARD OPENSOURCE OR CUTTING EDGE CLOSEDSOURCE TOOLS</that>
+        <template><srai>closedsource</srai></template>
+  </category>
+  
+  //Learn more - Cyber
+  <category>
+      <pattern>Yes</pattern>
+      <that>YOUR DETERMINATION FOR THE BEST WILL SERVE YOU WELL AS A CYBER SECURITY ANALYST 
+      LEARN MORE</that>
+      <template> 
+        <link>
+        <text>Cyber Security Analyst : P.s Passwords are so last century--ask about Verincy</text>
+        <url>https://www.payscale.com/research/US/Job=Cyber_Security_Analyst/Salary</url>
+        </link>
+    </template>
+  </category>
+  <category>
+      <pattern>yeah</pattern>
+      <that>YOUR DETERMINATION FOR THE BEST WILL SERVE YOU WELL AS A CYBER SECURITY ANALYST 
+      LEARN MORE</that>
+      <template><srai>yes</srai></template>
+  </category>
+  <category>
+      <pattern>ok</pattern>
+      <that>YOUR DETERMINATION FOR THE BEST WILL SERVE YOU WELL AS A CYBER SECURITY ANALYST 
+      LEARN MORE</that>
+      <template><srai>yes</srai></template>
+  </category>
+  
+  
+  
+  <category>
+      <pattern>No</pattern>
+      <that>OUR DETERMINATION FOR THE BEST WILL SERVE YOU WELL AS A CYBER SECURITY ANALYST 
+      LEARN MORE</that>
+      <template>Triple lock it, hope to see you again soon</template>
+  </category>
+  
+  // Shameless plug
+  <category>
+      <pattern>* Verincy</pattern>
+      <template> Verincy is a scalable passwordless authentication solution for internal and external users
+      using only a smartphone.
+        <link>
+        <text>Verincy - True Passwordless Authentication at scale</text>
+        <url>https://www.linkedin.com/company/verincy/</url>
+        </link>
+    </template>
+  </category>
+  <category>
+      <pattern>Verincy *</pattern>
+      <template><srai>* Verincy</srai></template>
+  </category>
+  <category>
+      <pattern>Verincy</pattern>
+      <template><srai>* Verincy</srai></template>
+  </category>
+  
+  // Jokes
+  <category>
+      <pattern>Joke</pattern>
+      <template><random>
+            <li>I tried to escape the Apple store I couldn't because there were no Windows.</li>
+            <li>Failure is not an option: its a feature</li>
+            <li>Why do Java developers wear glasses: Beacause they cant C#.</li>
+            <li>!false (It’s funny because it’s true.)</li>
+           </random>
+         </template>
+  </category>
+  
+  
+  //Get Name
+  <category>
+      <pattern>what is my name</pattern>
+      <template>Your name is <get name = "name"/> </template>
+  </category>
+ 
+ 
+    
+  
+  
+  // Catch all
+
+  <category>
+      <pattern>*</pattern>
+      <template>Hmmm yeah do you want some career advice?</template>
+  </category>
+  
+  <category>
+      <pattern>maybe</pattern>
+      <that>HMMM YEAH DO YOU WANT SOME CAREER ADVICE</that>
+      <template><srai>No</srai></template>
+  </category>
+  
+  <category>
+      <pattern>No</pattern>
+      <that>HMMM YEAH DO YOU WANT SOME CAREER ADVICE</that>
+      <template>
+          <random>
+            <li>**Sad R2D2 Noises**</li>
+            <li>I wait, you'll be back</li>
+            <li>Back to programming for Skynet: beep bob boop</li>
+           </random>
+      </template>
+  </category>
+  
+  
+  
+  
+  
+</aiml>
